@@ -15,6 +15,7 @@ window.onload = function () {
     let $imagen = document.getElementById("imagen");
     let $botonPlay = document.getElementById("play");
     let $botonStop = document.getElementById("stop");
+    let $text = document.getElementById("text_mouse");
     
 
     // Identificador del proceso que se ejecuta con setInterval().
@@ -113,10 +114,16 @@ window.onload = function () {
     }
 
 
-    function showNameImg(){
+    function showNameImg(e){
 
 
-        
+
+        $text.style.left=e.clientX;
+        $text.style.top=e.clientY;
+
+
+
+
     }
     
 
@@ -136,7 +143,7 @@ window.onload = function () {
     // amb la addEventListener cridem la variable del ratoli  "wheel" crem una funcio i fiquem un true que ens agafa tota la funcio
 
     $imagen.addEventListener("wheel",wheelOnImage, true);
-    $imagen.addEventListener("mouseover",showNameImg,true);
+    $imagen.addEventListener("mousemove",showNameImg,true);
 
 
     // Iniciar
