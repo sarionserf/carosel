@@ -1,12 +1,12 @@
 window.onload = function () {
     // Variables
 
-    // AÒadir las tres im·genes del directorio "img" al array IMAGENES.
+    // A√±adir las tres im√°genes del directorio "img" al array IMAGENES.
     const IMAGENES = [];
 
     const TIEMPO_INTERVALO_MILESIMAS_SEG = 1000;
 
-    // posiciÛn actual guarda el indice de la im·gen que se est· mostrando (del array IMAGENES)
+    // posici√≥n actual guarda el indice de la im√°gen que se est√° mostrando (del array IMAGENES)
     let posicionActual = 0;
 
     // variables con los elementos del DOM HTML, aplicar el selector necesario.
@@ -50,9 +50,9 @@ window.onload = function () {
      * Activa el autoplay de la imagen
      */
     function playIntervalo() {
-        // DocumentaciÛn de la funciÛn setInterval: https://developer.mozilla.org/en-US/docs/Web/API/setInterval
-        // Mediante la funciÛn setInterval() se ejecuta la funciÛn pasarFoto cada TIEMPO_INTERVALO_MILESIMAS_SEG.
-        intervalo = setInterval(pasarFoto, TIEMPO_INTERVALO_MILESIMAS_SEG);
+        // Documentaci√≥n de la funci√≥n setInterval: https://developer.mozilla.org/en-US/docs/Web/API/setInterval
+        // Mediante la funci√≥n setInterval() se ejecuta la funci√≥n pasarFoto cada TIEMPO_INTERVALO_MILESIMAS_SEG.
+        
 
         // Desactivamos los botones de control necesarios. Utilizando setAttribute y removeAttribute.
 
@@ -62,13 +62,13 @@ window.onload = function () {
      * Para el autoplay de la imagen
      */
     function stopIntervalo() {
-        // Desactivar la ejecuciÛn de intervalo.
+        // Desactivar la ejecuci√≥n de intervalo.
 
         // Activamos los botones de control. Utilizando setAttribute y removeAttribute.
     }
 
     // Eventos
-    // AÒadimos los evenntos necesarios para cada boton. Mediante addEventListener.
+    // A√±adimos los evenntos necesarios para cada boton. Mediante addEventListener.
 
     // Iniciar
     renderizarImagen();
